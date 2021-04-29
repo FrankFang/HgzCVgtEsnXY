@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, {useState} from 'react';
+import logo from './logo.svg';
+import './App.css';
+import picture1 from './images/1.jpg';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo"/>
         <p>Hello Vite + React!</p>
         <p>
           <button onClick={() => setCount(count => count + 1)}>count is: {count}</button>
@@ -25,8 +26,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <img src={picture1} alt="图片1"/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
