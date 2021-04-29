@@ -1,0 +1,6 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "14"
+  }
+}
