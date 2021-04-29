@@ -28,6 +28,8 @@ const server = http.createServer(async function (request, response) {
 
   const onFileNotFound = () => {
     console.log('not found')
+    response.statusCode = 404
+    response.end('404')
   }
   await fsp.access(fullFilePath, fs.constants.R_OK)
     .catch(onFileNotFound)
