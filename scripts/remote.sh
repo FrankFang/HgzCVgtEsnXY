@@ -2,7 +2,8 @@
 [ -f pid ] && cat pid | xargs kill -9 && rm pid
 cd ~/app
 if [ -d .git ]; then
-  git pull origin master
+  git fetch
+  git reset --hard origin/master
 else
   git clone https://github.com/FrankFang/HgzCVgtEsnXY.git .
 fi;
